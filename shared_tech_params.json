@@ -1,0 +1,36 @@
+{
+    "assets": {
+        "ABh": {
+            "name": "Checkbox preview",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1616017419676x657338651108263300/check_box-24px.svg"
+        },
+        "ABi": {
+            "name": "Radio preview",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1616018135692x428163608206902460/radio_button_checked-24px.svg"
+        },
+        "ABj": {
+            "name": "Pill Style Sheet",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1616103760090x867684527901605000/multiselectpills.css"
+        },
+        "ABl": {
+            "name": "Checkbox Style Sheet",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1616442420934x366812450238736000/radioboxstyle.css"
+        },
+        "ACy": {
+            "name": "Single Checkbox Style",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1618504271724x540405139580332200/canvascheckbox.css"
+        },
+        "ADS": {
+            "name": "icon_loading",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1622603512911x517483885496268700/loader.svg"
+        },
+        "AEG": {
+            "name": "Lottie animation",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1635867089149x174346037682571620/canvasLottieAnimation.json"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": "2",
+        "use_jquery": true
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "category": "plugins",
+    "display": "Hide loading screen",
+    "type": "client_side"
+}

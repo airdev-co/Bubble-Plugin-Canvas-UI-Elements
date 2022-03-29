@@ -1,0 +1,276 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 40,
+        "width": 70
+    },
+    "display": "Canvas Color Picker",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1499130874654x508908465737476900/placeholder.png",
+    "events": {
+        "ABm": {
+            "caption": "color changed",
+            "doc": "called as the original input changes. Only happens when the input is closed or the 'Choose' button is clicked.",
+            "name": "color_changed"
+        }
+    },
+    "fields": {
+        "ABn": {
+            "caption": "Initial color",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "doc": "The initial color of the color picker",
+            "editor": "Color",
+            "name": "initial_color",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABo": {
+            "caption": "Show input",
+            "default_val": false,
+            "doc": "Check this if you want your users to be able to type in a color string. e.g #17d9fd",
+            "editor": "Checkbox",
+            "name": "show_input",
+            "rank": 1
+        },
+        "ABp": {
+            "caption": "Show transparency slider",
+            "default_val": true,
+            "doc": "Check to allow for alpha transparency selection",
+            "editor": "Checkbox",
+            "name": "show_alpha",
+            "rank": 2
+        },
+        "ABq": {
+            "caption": "Disabled",
+            "default_val": false,
+            "doc": "If checked the color picker will be disabled",
+            "editor": "Checkbox",
+            "name": "disabled",
+            "rank": 3
+        },
+        "ABr": {
+            "caption": "Show palette",
+            "default_val": true,
+            "doc": "If checked a color palette will be displayed to make convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be added to the palette if it isn't there already.",
+            "editor": "Checkbox",
+            "name": "show_palette",
+            "rank": 4
+        },
+        "ABs": {
+            "caption": "Palette colors (list of color strings)",
+            "doc": "Initial color palette",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "palette_colors",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ABt": {
+            "caption": "Show palette only",
+            "default_val": true,
+            "doc": "Check this box if you want only the palette to show.",
+            "editor": "Checkbox",
+            "name": "palette_only",
+            "rank": 5
+        },
+        "ABu": {
+            "caption": "Toggle palette only",
+            "default_val": true,
+            "doc": "Color picker can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to pick a color that's not in the palette.",
+            "editor": "Checkbox",
+            "name": "toggle_palette_only",
+            "rank": 6
+        },
+        "ABv": {
+            "caption": "Show selection palette",
+            "default_val": true,
+            "doc": "Color picker can keep track of what has been selected by the user with when this is checked.",
+            "editor": "Checkbox",
+            "name": "show_selection_palette",
+            "rank": 8
+        },
+        "ABw": {
+            "caption": "Max selection size",
+            "default_val": 24,
+            "doc": "This is how many elements are allowed in the selectionPallete at once.",
+            "editor": "DynamicValue",
+            "name": "max_selection_size",
+            "optional": true,
+            "rank": 9,
+            "value": "number"
+        },
+        "ABx": {
+            "caption": "Hide after palette select",
+            "default_val": true,
+            "doc": "You can have the colorpicker automatically hide after a palette color is selected.",
+            "editor": "Checkbox",
+            "name": "hide_after_select",
+            "rank": 10
+        },
+        "ABy": {
+            "caption": "Clickout will accept color",
+            "default_val": true,
+            "doc": "When clicking outside of the colorpicker, you can force it to fire a change event rather than having it revert the change.",
+            "editor": "Checkbox",
+            "name": "clickout_fires_change",
+            "rank": 11
+        },
+        "ABz": {
+            "caption": "Show previous color",
+            "default_val": true,
+            "doc": "Colorpicker can show the color that was initially set when opening. This provides an easy way to click back to what was set when opened.",
+            "editor": "Checkbox",
+            "name": "show_previous_color",
+            "rank": 12
+        },
+        "ACA": {
+            "caption": "Show buttons",
+            "default_val": true,
+            "doc": "You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input) when the picker is closed.",
+            "editor": "Checkbox",
+            "name": "show_buttons",
+            "rank": 13
+        },
+        "ACB": {
+            "caption": "Format",
+            "default_val": "hex",
+            "doc": "You can set the format that is displayed in the text box. This will also change the format that is displayed in the titles from the palette swatches.",
+            "editor": "Dropdown",
+            "name": "preferred_format",
+            "optional": false,
+            "options": "hex,hex3,hsl,rgb,name",
+            "rank": 14
+        },
+        "ACC": {
+            "caption": "Toggle palette more text",
+            "default_val": "more",
+            "doc": "Text label for more button",
+            "editor": "StaticText",
+            "name": "togglepalettemoretext",
+            "optional": true,
+            "rank": 15
+        },
+        "ACD": {
+            "caption": "Toggle palette less text",
+            "default_val": "less",
+            "doc": "Text label for less button",
+            "editor": "StaticText",
+            "name": "togglepalettelesstext",
+            "optional": true,
+            "rank": 16
+        },
+        "ACE": {
+            "caption": "Cancel button text",
+            "default_val": "cancel",
+            "doc": "Label for cancel button",
+            "editor": "StaticText",
+            "name": "cancel_text",
+            "optional": true,
+            "rank": 17
+        },
+        "ACF": {
+            "caption": "Choose button text",
+            "default_val": "select",
+            "doc": "Label for choose button",
+            "editor": "StaticText",
+            "name": "choose_text",
+            "optional": true,
+            "rank": 18
+        },
+        "ACG": {
+            "caption": "Background color",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "doc": "Choose background color",
+            "editor": "Color",
+            "in_style": true,
+            "name": "background_color",
+            "rank": 19
+        },
+        "ACH": {
+            "caption": "Border color",
+            "default_val": "rgba(229, 232, 235, 1)",
+            "doc": "Choose border color",
+            "editor": "Color",
+            "in_style": true,
+            "name": "border_color",
+            "rank": 20
+        },
+        "ACI": {
+            "caption": "Corner roundness",
+            "default_val": "6",
+            "doc": "Specify corner roundness",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "border_radius",
+            "optional": true,
+            "options": "0,1,2,3,4,5,6",
+            "rank": 21
+        },
+        "ACJ": {
+            "caption": "Allow empty color",
+            "default_val": false,
+            "doc": "Check this to allow selection of empty color",
+            "editor": "Checkbox",
+            "name": "allow_empty",
+            "rank": 22
+        }
+    },
+    "has_reset_fn": true,
+    "icon": "ion-android-color-palette",
+    "property_applications": {
+        "Background": false,
+        "Border": false,
+        "BoxShadow": false,
+        "MinWidth": false,
+        "resizable": false
+    },
+    "states": {
+        "ACK": {
+            "caption": "optimized value",
+            "doc": "Selected color as optimized value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  properties.initial_color;\n}"
+            },
+            "name": "value",
+            "value": "text"
+        },
+        "AEB": {
+            "caption": "HSL(a) value",
+            "doc": "Selected color as HSL value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hsl",
+            "value": "text"
+        },
+        "AEC": {
+            "caption": "HSV(a) value",
+            "doc": "Selected color as HSV value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hsv",
+            "value": "text"
+        },
+        "AED": {
+            "caption": "RGB(a) value",
+            "doc": "Selected color as RGB value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "rgb",
+            "value": "text"
+        },
+        "AEE": {
+            "caption": "HEX value",
+            "doc": "Selected color as HEX value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hex",
+            "value": "text"
+        }
+    }
+}

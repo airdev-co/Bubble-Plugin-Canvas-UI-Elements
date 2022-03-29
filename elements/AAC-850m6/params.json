@@ -1,0 +1,308 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 50,
+        "width": 400
+    },
+    "display": "Canvas Tags",
+    "events": {
+        "AAo": {
+            "caption": "is selected",
+            "name": "is_selected"
+        },
+        "ABf": {
+            "caption": "is deselected",
+            "name": "is_deselected"
+        }
+    },
+    "fields": {
+        "AAD": {
+            "caption": "GENERAL SETTINGS --------------",
+            "editor": "Label",
+            "name": "settings_--------------",
+            "rank": 0
+        },
+        "AAE": {
+            "caption": "Alignment",
+            "default_val": "Left",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "main_alignment",
+            "options": "Left,Center,Right",
+            "rank": 1
+        },
+        "AAF": {
+            "caption": "Flow",
+            "default_val": "Wrap to next line",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "main_flow",
+            "options": "Wrap to next line,Scroll Horizontally,Stack Vertically",
+            "rank": 2
+        },
+        "AAG": {
+            "caption": "Selection style",
+            "default_val": "Multiple Selection",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "main_selection_style",
+            "options": "Multiple Selection,Single Selection,Disable Selection",
+            "rank": 3
+        },
+        "AAH": {
+            "caption": "DESIGN SETTINGS --------------",
+            "editor": "Label",
+            "name": "pill_settings",
+            "rank": 6
+        },
+        "AAI": {
+            "caption": "Margin",
+            "default_val": "3px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "margin",
+            "rank": 8,
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "Padding",
+            "default_val": "9px 14px",
+            "doc": "",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "padding",
+            "rank": 9,
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "Background Color",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "doc": "",
+            "editor": "Color",
+            "in_style": true,
+            "name": "bg_color",
+            "rank": 10
+        },
+        "AAL": {
+            "caption": "Border Radius",
+            "default_val": "30px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "border_radius",
+            "rank": 11,
+            "value": "text"
+        },
+        "AAM": {
+            "caption": "Border Width",
+            "default_val": "1px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "border_width",
+            "rank": 12,
+            "value": "text"
+        },
+        "AAN": {
+            "caption": "Border Color",
+            "default_val": "rgba(231, 233, 235, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "border_color",
+            "rank": 13,
+            "value": "text"
+        },
+        "AAO": {
+            "caption": "Dropshadow",
+            "default_val": "0px 0px 0px 0px lightgray",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "shadow",
+            "optional": false,
+            "rank": 14,
+            "value": "text"
+        },
+        "AAP": {
+            "caption": "↳ HOVER STATE",
+            "editor": "Label",
+            "name": "hover_settings_--------------",
+            "rank": 15
+        },
+        "AAS": {
+            "caption": "Hover Background",
+            "default_val": "rgba(255, 255, 255, 0.77)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hover_bg_color",
+            "optional": true,
+            "rank": 17
+        },
+        "AAV": {
+            "caption": "Hover Border",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hover_border_color",
+            "optional": true,
+            "rank": 18
+        },
+        "AAW": {
+            "caption": "Hover shadow",
+            "default_val": "",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "hover_shadow",
+            "optional": true,
+            "rank": 19,
+            "value": "text"
+        },
+        "AAX": {
+            "caption": "↳ SELECTED STATE",
+            "editor": "Label",
+            "name": "selected_settings_--------------",
+            "rank": 20
+        },
+        "AAa": {
+            "caption": "Selected Background",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "active_bg_color",
+            "optional": true,
+            "rank": 22
+        },
+        "AAd": {
+            "caption": "Selected Border",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "active_border_color",
+            "optional": true,
+            "rank": 23
+        },
+        "AAe": {
+            "caption": "Selected shadow",
+            "default_val": "",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "active_shadow",
+            "optional": true,
+            "rank": 24
+        },
+        "AAf": {
+            "caption": "DATA SETTINGS --------------",
+            "editor": "Label",
+            "name": "data_settings_--------------",
+            "rank": 25
+        },
+        "AAg": {
+            "caption": "Data type",
+            "editor": "custom_type",
+            "name": "data_type",
+            "rank": 26
+        },
+        "AAh": {
+            "caption": "Data source",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "optional": false,
+            "rank": 27,
+            "value": "custom_data_AAg"
+        },
+        "AAi": {
+            "caption": "Data Field",
+            "editor": "custom_field_AAg",
+            "field_type_restriction": "text_image_file",
+            "name": "data_field",
+            "rank": 28
+        },
+        "AAj": {
+            "caption": "Hover Font",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hover_font_color",
+            "optional": true,
+            "rank": 16
+        },
+        "AAk": {
+            "caption": "Selected Font",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "active_font_color",
+            "optional": true,
+            "rank": 21
+        },
+        "AAl": {
+            "caption": "All the settings below with a free text input operate on CSS standards allowing you to set the values with 1, 2, 3, or 4 values using em, px, ex, etc. The values start at the top and work around the element clockwise. For instance, if you set the Margin input to ‘3px’ this will set the margin on all sides to 3px. If you set it to ‘3px 5px’ this will set the top and bottom margins to 3px and the right and left margins to 5px. If you set it to ‘3px 5px 7px’ this will set the top margin to 3px, the right and left margins to 5px, and the bottom margin to 7px. If you set it to ‘3px 5px 7px 9px’ this will set each side’s margin corresponding to the position of the value. 3px: top, 5px: right, 7px: bottom, 9px: left.",
+            "editor": "Label",
+            "name": "all_the_settings_below_with_a_free_text_input_operate_on_standard_css_standards_allowing_you_to_set_it_with_1,_2,_3,_or_4_values._the_values_start_at_the_top_and_works_around_the_element_clockwise._for_instance,_if_you_set_the_margin_input_to_3px_this_will_set_the_margin_on_all_sides_to_3px._if_you_set_it_to_3px_5px_this_will_set_the_top_and_bottom_margins_to_3px_and_the_right_and_left_margins_to_5px._if_you_set_it_to_3px_5px_7px_this_will_set_the_top_margin_to_3px,_the_right_and_left_margins_to_5px,_and_the_bottom_margin_to_7px._if_you_set_it_to_3px_5px_7px_9px_this_will_set_each_side’s_margin_corresponding_to_the_position_of_the_value._3px:_top,_5px:_right,_7px:_bottom,_9px:_left.",
+            "rank": 7
+        },
+        "AAq": {
+            "caption": "Default selected",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "default_data",
+            "optional": true,
+            "rank": 29,
+            "value": "custom_data_AAg"
+        },
+        "AEF": {
+            "caption": "Collapse tags",
+            "default_val": false,
+            "doc": "Collapse the initial list of tags if they extend further than the width or height of the element",
+            "editor": "Checkbox",
+            "name": "collapse_tags",
+            "rank": 4
+        },
+        "AEI": {
+            "caption": "HTML tag type",
+            "default_val": "div",
+            "doc": "Select the html element tag type you would like to use for each text tag. This is set to <div> by default. Please keep in mind that it’s quite common for header tags such as h2, h3, etc to have styling set through a CSS stylesheet or 3rd party plugin so using an ‘h’ tag can impact the look of this element.",
+            "editor": "Dropdown",
+            "name": "tag_element_type",
+            "options": "div,h2,h3,h4,h5,h6,p",
+            "rank": 5
+        }
+    },
+    "has_reset_fn": false,
+    "icon": "ion-ios-toggle",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAm": {
+            "caption": "most recent tag selected",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": false,
+            "name": "selected_value",
+            "value": "custom_data_AAg"
+        },
+        "AAn": {
+            "caption": "selected tag(s)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "current_values",
+            "value": "custom_data_AAg"
+        },
+        "AAp": {
+            "caption": "most recent tag deselected ",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "deselected_value",
+            "value": "custom_data_AAg"
+        }
+    }
+}

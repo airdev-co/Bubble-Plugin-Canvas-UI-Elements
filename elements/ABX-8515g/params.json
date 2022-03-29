@@ -1,0 +1,308 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 50,
+        "width": 400
+    },
+    "display": "Canvas Radio Buttons",
+    "events": {
+        "AAr": {
+            "caption": "is selected",
+            "name": "is_selected"
+        },
+        "ABg": {
+            "caption": "is deselected",
+            "name": "is_deselected"
+        }
+    },
+    "fields": {
+        "AAs": {
+            "caption": "Main Settings --------------",
+            "editor": "Label",
+            "name": "settings_--------------",
+            "rank": 0
+        },
+        "AAt": {
+            "caption": "Alignment",
+            "default_val": "Left",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "main_alignment",
+            "options": "Left,Center,Right",
+            "rank": 1
+        },
+        "AAu": {
+            "caption": "Flow",
+            "default_val": "Stack Vertically",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "main_flow",
+            "options": "Stack Vertically, Wrap",
+            "rank": 2
+        },
+        "AAv": {
+            "caption": "Selection style",
+            "default_val": "Checkbox",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "main_selection_style",
+            "options": "Checkbox,Radio Button",
+            "rank": 3
+        },
+        "AAw": {
+            "caption": "DESIGN SETTINGS --------------",
+            "editor": "Label",
+            "name": "pill_settings",
+            "rank": 6
+        },
+        "AAx": {
+            "caption": "Margin",
+            "default_val": "2px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "margin",
+            "rank": 8,
+            "value": "text"
+        },
+        "AAy": {
+            "caption": "Padding",
+            "default_val": "14px 19px",
+            "doc": "",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "padding",
+            "rank": 9,
+            "value": "text"
+        },
+        "AAz": {
+            "caption": "Background Color",
+            "default_val": "rgba(243, 249, 254, 1)",
+            "doc": "",
+            "editor": "Color",
+            "in_style": true,
+            "name": "bgColor",
+            "rank": 10
+        },
+        "ABA": {
+            "caption": "Border Radius",
+            "default_val": "6px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "borderRadius",
+            "rank": 11,
+            "value": "text"
+        },
+        "ABB": {
+            "caption": "Border Width",
+            "default_val": "1px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "borderWidth",
+            "rank": 12,
+            "value": "text"
+        },
+        "ABC": {
+            "caption": "Border Color",
+            "default_val": "rgba(228, 242, 253, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "borderColor",
+            "rank": 13,
+            "value": "text"
+        },
+        "ABD": {
+            "caption": "Dropshadow",
+            "default_val": "0px 0px lightgray",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "shadow",
+            "rank": 14,
+            "value": "text"
+        },
+        "ABE": {
+            "caption": "↳ HOVER STATE",
+            "editor": "Label",
+            "name": "hover_settings_--------------",
+            "rank": 15
+        },
+        "ABF": {
+            "caption": "Hover Background",
+            "default_val": "rgba(252, 253, 254, 0.77)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hBgColor",
+            "optional": true,
+            "rank": 17
+        },
+        "ABG": {
+            "caption": "Hover Border",
+            "default_val": "rgba(228, 242, 253, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hBorderColor",
+            "optional": true,
+            "rank": 18
+        },
+        "ABH": {
+            "caption": "Hover shadow",
+            "default_val": "1px 1px 4px whitesmoke",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "hShadow",
+            "optional": true,
+            "rank": 19,
+            "value": "text"
+        },
+        "ABI": {
+            "caption": "↳ SELECTED STATE",
+            "editor": "Label",
+            "name": "selected_settings_--------------",
+            "rank": 20
+        },
+        "ABJ": {
+            "caption": "Selected Background",
+            "default_val": "rgba(228, 242, 253, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "vBgColor",
+            "optional": true,
+            "rank": 22
+        },
+        "ABK": {
+            "caption": "Selected Border",
+            "default_val": "rgba(228, 242, 253, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "vBorderColor",
+            "optional": true,
+            "rank": 23
+        },
+        "ABL": {
+            "caption": "Selected shadow",
+            "default_val": "0px 0px lightgray",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "vShadow",
+            "optional": true,
+            "rank": 24
+        },
+        "ABM": {
+            "caption": "DATA SETTINGS --------------",
+            "editor": "Label",
+            "name": "data_settings_--------------",
+            "rank": 25
+        },
+        "ABN": {
+            "caption": "Data type",
+            "editor": "custom_type",
+            "name": "data_type",
+            "rank": 26
+        },
+        "ABO": {
+            "caption": "Data source",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "optional": false,
+            "rank": 27,
+            "value": "custom_data_ABN"
+        },
+        "ABP": {
+            "caption": "Data Field",
+            "editor": "custom_field_ABN",
+            "field_type_restriction": "text_image_file",
+            "name": "data_field",
+            "rank": 28
+        },
+        "ABQ": {
+            "caption": "Hover Font",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hColor",
+            "optional": true,
+            "rank": 16
+        },
+        "ABR": {
+            "caption": "Selected Font",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "vColor",
+            "optional": true,
+            "rank": 21
+        },
+        "ABS": {
+            "caption": "All the settings below with a free text input operate on CSS standards allowing you to set the values with 1, 2, 3, or 4 values using em, px, ex, etc. The values start at the top and work around the element clockwise. For instance, if you set the Margin input to ‘3px’ this will set the margin on all sides to 3px. If you set it to ‘3px 5px’ this will set the top and bottom margins to 3px and the right and left margins to 5px. If you set it to ‘3px 5px 7px’ this will set the top margin to 3px, the right and left margins to 5px, and the bottom margin to 7px. If you set it to ‘3px 5px 7px 9px’ this will set each side’s margin corresponding to the position of the value. 3px: top, 5px: right, 7px: bottom, 9px: left.",
+            "editor": "Label",
+            "name": "all_the_settings_below_with_a_free_text_input_operate_on_standard_css_standards_allowing_you_to_set_it_with_1,_2,_3,_or_4_values._the_values_start_at_the_top_and_works_around_the_element_clockwise._for_instance,_if_you_set_the_margin_input_to_3px_this_will_set_the_margin_on_all_sides_to_3px._if_you_set_it_to_3px_5px_this_will_set_the_top_and_bottom_margins_to_3px_and_the_right_and_left_margins_to_5px._if_you_set_it_to_3px_5px_7px_this_will_set_the_top_margin_to_3px,_the_right_and_left_margins_to_5px,_and_the_bottom_margin_to_7px._if_you_set_it_to_3px_5px_7px_9px_this_will_set_each_side’s_margin_corresponding_to_the_position_of_the_value._3px:_top,_5px:_right,_7px:_bottom,_9px:_left.",
+            "rank": 7
+        },
+        "ABT": {
+            "caption": "Default selected",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "default_data",
+            "optional": true,
+            "rank": 29,
+            "value": "custom_data_ABN"
+        },
+        "ABY": {
+            "caption": "Icon size",
+            "default_val": "19px",
+            "editor": "StaticText",
+            "in_style": false,
+            "name": "icon_size",
+            "rank": 5
+        },
+        "ABk": {
+            "caption": "Disable Selection",
+            "default_val": false,
+            "doc": "Disabling selection will not allow your users to click on the checkbox/radio buttons",
+            "editor": "DynamicValue",
+            "name": "disable_selection",
+            "optional": false,
+            "rank": 4,
+            "value": "boolean"
+        }
+    },
+    "has_reset_fn": false,
+    "icon": "ion-android-radio-button-on",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "ABU": {
+            "caption": "Latest Value Selected",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": false,
+            "name": "selected_value",
+            "value": "custom_data_ABN"
+        },
+        "ABW": {
+            "caption": "Latest Value Deselected",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "deselected_value",
+            "value": "custom_data_ABN"
+        },
+        "ABa": {
+            "caption": "Current Values Selected",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "current_values",
+            "value": "custom_data_ABN"
+        }
+    }
+}

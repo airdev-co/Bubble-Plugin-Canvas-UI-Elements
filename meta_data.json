@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "media",
+        "1": "data (things)",
+        "2": "containers"
+    },
+    "description": "UI elements designed for the Canvas template by AirDev. While built for Canvas, spice up the UI of any Bubble app with this free plugin!",
+    "image": "//s3.amazonaws.com/appforest_uf/f1627677526416x324755459863274940/Canvas%20UI%20Elements.svg",
+    "license": "open_source",
+    "name": "Canvas UI Elements"
+}

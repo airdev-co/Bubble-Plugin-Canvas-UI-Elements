@@ -1,0 +1,92 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 32,
+        "width": 50
+    },
+    "display": "Canvas Toggle",
+    "events": {
+        "ADU": {
+            "caption": "is changed",
+            "name": "is_changed"
+        }
+    },
+    "fields": {
+        "ADV": {
+            "caption": "Toggle size",
+            "default_val": "Medium",
+            "editor": "Dropdown",
+            "name": "size",
+            "options": "Small,Medium,Large",
+            "rank": 0
+        },
+        "ADW": {
+            "caption": "Checked state",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "is_checked",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "ADX": {
+            "caption": "THEMING --------",
+            "editor": "Label",
+            "name": "theming_--------",
+            "rank": 3
+        },
+        "ADY": {
+            "caption": "Track - Unchecked",
+            "default_val": "rgba(231, 233, 235, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "track_unchecked",
+            "rank": 4
+        },
+        "ADZ": {
+            "caption": "Track - Checked",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "track_checked",
+            "rank": 5
+        },
+        "ADa": {
+            "caption": "Handle - Unchecked",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "handle_unchecked",
+            "rank": 6
+        },
+        "ADb": {
+            "caption": "Handle - Checked",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "handle_checked",
+            "rank": 7
+        },
+        "ADz": {
+            "caption": "This toggle is disabled",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "this_toggle_is_disabled",
+            "rank": 2
+        }
+    },
+    "icon": "ion-toggle",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "ADc": {
+            "caption": "is checked",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\treturn properties.is_checked;\n\n}"
+            },
+            "name": "is_checked",
+            "value": "boolean"
+        }
+    }
+}

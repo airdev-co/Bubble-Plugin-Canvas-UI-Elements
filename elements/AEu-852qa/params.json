@@ -1,0 +1,363 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 50,
+        "width": 400
+    },
+    "display": "Canvas Tabs",
+    "events": {
+        "AEL": {
+            "caption": "is clicked",
+            "name": "is_clicked"
+        }
+    },
+    "fields": {
+        "AEN": {
+            "caption": "GENERAL SETTINGS --------------",
+            "editor": "Label",
+            "name": "settings_--------------",
+            "rank": 1
+        },
+        "AEO": {
+            "caption": "Alignment",
+            "default_val": "Left",
+            "doc": "[All Styles] Aligns the tabs within the width of the element.",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "tab_alignment",
+            "options": "Left,Center,Right,Space Out",
+            "rank": 2
+        },
+        "AEP": {
+            "caption": "Tab horizontal offset",
+            "default_val": "0px",
+            "doc": "[Folder, Underline styles] Offsets the tabs from the left and right edges",
+            "editor": "StaticText",
+            "in_style": false,
+            "name": "tab_offset_horizontal",
+            "options": "Wrap to next line,Scroll Horizontally,Stack Vertically",
+            "rank": 4
+        },
+        "AEQ": {
+            "caption": "Tab style",
+            "default_val": "Outline",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "tab_style",
+            "options": "Outline,Underline,Folder",
+            "rank": 3
+        },
+        "AER": {
+            "caption": "DESIGN SETTINGS --------------",
+            "editor": "Label",
+            "name": "pill_settings",
+            "rank": 7
+        },
+        "AES": {
+            "caption": "Margin",
+            "default_val": "3px",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "margin",
+            "rank": 8,
+            "value": "text"
+        },
+        "AET": {
+            "caption": "Padding",
+            "default_val": "9px 14px",
+            "doc": "",
+            "editor": "StaticText",
+            "in_style": true,
+            "name": "padding",
+            "rank": 9,
+            "value": "text"
+        },
+        "AEU": {
+            "caption": "Default",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "doc": "",
+            "editor": "Color",
+            "in_style": true,
+            "name": "bg_color",
+            "rank": 21
+        },
+        "AEV": {
+            "caption": "Border Radius",
+            "default_val": "4px",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "border_radius",
+            "options": "0px,1px,2px,3px,4px,5px,6px,7px,8px,9px,10px,11px,12px,13px,14px,15px,16px,17px,18px,19px,20px,21px,22px,23px,24px,25px,26px,27px,28px,29px,30px",
+            "rank": 10,
+            "value": "text"
+        },
+        "AEW": {
+            "caption": "Border Width",
+            "default_val": "1px",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "border_width",
+            "options": "0px,1px,2px,3px,4px,5px,6px,7px,8px,9px,10px",
+            "rank": 11,
+            "value": "text"
+        },
+        "AEX": {
+            "caption": "Default",
+            "default_val": "rgba(231, 233, 235, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "border_color",
+            "rank": 17,
+            "value": "text"
+        },
+        "AEY": {
+            "caption": "Default",
+            "default_val": "rgba(199, 199, 199, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "default_font_color",
+            "optional": false,
+            "rank": 13,
+            "value": "text"
+        },
+        "AEZ": {
+            "caption": "↳ FONT COLOR",
+            "editor": "Label",
+            "name": "font_color --------------",
+            "rank": 12
+        },
+        "AEa": {
+            "caption": "Hover",
+            "default_val": "rgba(255, 255, 255, 0.77)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hover_bg_color",
+            "optional": true,
+            "rank": 22
+        },
+        "AEb": {
+            "caption": "Hover",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hover_border_color",
+            "optional": true,
+            "rank": 18
+        },
+        "AEc": {
+            "caption": "↳ BACKGROUND COLOR",
+            "editor": "Label",
+            "in_style": true,
+            "name": "background_settings",
+            "optional": true,
+            "rank": 20,
+            "value": "text"
+        },
+        "AEd": {
+            "caption": "↳ BORDER COLOR",
+            "editor": "Label",
+            "name": "border_color--------------",
+            "rank": 16
+        },
+        "AEe": {
+            "caption": "Active",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "active_bg_color",
+            "optional": true,
+            "rank": 23
+        },
+        "AEf": {
+            "caption": "Active",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "active_border_color",
+            "optional": true,
+            "rank": 19
+        },
+        "AEh": {
+            "caption": "TAB DATA --------------",
+            "editor": "Label",
+            "name": "data_settings_--------------",
+            "rank": 29
+        },
+        "AEi": {
+            "caption": "Data type",
+            "editor": "custom_type",
+            "name": "data_type",
+            "optional": true,
+            "rank": 30
+        },
+        "AEj": {
+            "caption": "List of tabs",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_list",
+            "optional": true,
+            "rank": 31,
+            "value": "custom_data_AEi"
+        },
+        "AEk": {
+            "caption": "Text field",
+            "editor": "custom_field_AEi",
+            "field_type_restriction": "text_image_file",
+            "name": "data_field_title",
+            "optional": true,
+            "rank": 32
+        },
+        "AEl": {
+            "caption": "Hover",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "hover_font_color",
+            "optional": true,
+            "rank": 14
+        },
+        "AEm": {
+            "caption": "Active",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "active_font_color",
+            "optional": true,
+            "rank": 15
+        },
+        "AEn": {
+            "caption": "All free text inputs operate on CSS standards allowing you to set the values with 1, 2, 3, or 4 values using em, px, ex, etc. The values start at the top and work around the element clockwise. For instance, if you set the Margin input to ‘3px’ this will set the margin on all sides to 3px. If you set it to ‘3px 5px’ this will set the top and bottom margins to 3px and the right and left margins to 5px. If you set it to ‘3px 5px 7px’ this will set the top margin to 3px, the right and left margins to 5px, and the bottom margin to 7px. If you set it to ‘3px 5px 7px 9px’ this will set each side’s margin corresponding to the position of the value. 3px: top, 5px: right, 7px: bottom, 9px: left.",
+            "editor": "Label",
+            "name": "all_the_settings_below_with_a_free_text_input_operate_on_standard_css_standards_allowing_you_to_set_it_with_1,_2,_3,_or_4_values._the_values_start_at_the_top_and_works_around_the_element_clockwise._for_instance,_if_you_set_the_margin_input_to_3px_this_will_set_the_margin_on_all_sides_to_3px._if_you_set_it_to_3px_5px_this_will_set_the_top_and_bottom_margins_to_3px_and_the_right_and_left_margins_to_5px._if_you_set_it_to_3px_5px_7px_this_will_set_the_top_margin_to_3px,_the_right_and_left_margins_to_5px,_and_the_bottom_margin_to_7px._if_you_set_it_to_3px_5px_7px_9px_this_will_set_each_side’s_margin_corresponding_to_the_position_of_the_value._3px:_top,_5px:_right,_7px:_bottom,_9px:_left.",
+            "rank": 0
+        },
+        "AEo": {
+            "caption": "Default active tab",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "data_active",
+            "optional": true,
+            "rank": 33,
+            "value": "custom_data_AEi"
+        },
+        "AEp": {
+            "caption": "Maximize tab width",
+            "default_val": false,
+            "doc": "[Folder, Underline styles] Maximizes the width of the tabs to fit evenly across the element.",
+            "editor": "Checkbox",
+            "in_style": false,
+            "name": "tab_grow",
+            "rank": 5
+        },
+        "AEq": {
+            "caption": "HTML tab type",
+            "default_val": "div",
+            "doc": "Select the html element tag type you would like to use for each text tag. This is set to <div> by default. Please keep in mind that it’s quite common for header tags such as h2, h3, etc to have styling set through a CSS stylesheet or 3rd party plugin so using an ‘h’ tag can impact the look of this element.",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "tab_element_type",
+            "options": "div,h2,h3,h4,h5,h6,p",
+            "rank": 6
+        },
+        "AEv": {
+            "caption": "Line color",
+            "default_val": "rgba(242, 242, 242, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "indicator_track_color",
+            "rank": 25
+        },
+        "AEw": {
+            "caption": "Line height",
+            "default_val": "1px",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "indicator_track_height",
+            "options": "0px,1px,2px,3px,4px,5px,6px,7px,8px,9px,10px",
+            "rank": 26
+        },
+        "AEx": {
+            "caption": "Indicator color",
+            "default_val": "rgba(11, 139, 189, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "indicator_color",
+            "rank": 27
+        },
+        "AEy": {
+            "caption": "Indicator height",
+            "default_val": "1px",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "indicator_height",
+            "options": "0px,1px,2px,3px,4px,5px,6px,7px,8px,9px,10px,11px,12px,13px,14px,15px,16px,17px,18px,19px,20px,21px,22px,23px,24px,25px,26px,27px,28px,29px,30px,31px,32px,33px,34px,35px,36px,37px,38px,39px,40px,41px,42px,43px,44px,45px,46px,47px,48px,49px,50px",
+            "rank": 28
+        },
+        "AEz": {
+            "caption": "INDICATOR SETTINGS --------------",
+            "editor": "Label",
+            "name": "indicator_settings_--------------",
+            "rank": 24
+        },
+        "AFB": {
+            "caption": "Static texts",
+            "doc": "Add a list of static texts, separated by line breaks (Enter)",
+            "editor": "StaticText",
+            "long_text": true,
+            "name": "static_texts",
+            "optional": true,
+            "rank": 36
+        },
+        "AFC": {
+            "caption": "Use static texts",
+            "default_val": false,
+            "doc": "Use static texts instead of dynamic texts",
+            "editor": "Checkbox",
+            "name": "use_static_texts",
+            "rank": 35
+        },
+        "AFD": {
+            "caption": "Static texts can be used instead of dynamic texts for this element, similar to the Bubble dropdown interface.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 34
+        },
+        "AFF": {
+            "caption": "Default static text",
+            "default_val": "",
+            "editor": "StaticText",
+            "name": "default_static_text",
+            "optional": true,
+            "rank": 37
+        }
+    },
+    "icon": "ion-ios-folder",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AEr": {
+            "caption": "active tab (dynamic data type)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": false,
+            "name": "active_tab",
+            "value": "custom_data_AEi"
+        },
+        "AFE": {
+            "caption": "Active tab (static)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "active_tab_static",
+            "value": "text"
+        }
+    }
+}

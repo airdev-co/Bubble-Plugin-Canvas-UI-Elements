@@ -1,0 +1,79 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 14,
+        "width": 14
+    },
+    "display": "Loading screen",
+    "fields": {
+        "ACz": {
+            "caption": "Auto close",
+            "default_val": true,
+            "doc": "Checking this box will automatically close the loader after the page is loaded. Optionally you can hide the loader using the ‘Hide loading screen’ action in a workflow.",
+            "editor": "Checkbox",
+            "name": "auto_close",
+            "rank": 1
+        },
+        "ADA": {
+            "caption": "Close X ms after page load",
+            "default_val": 5000,
+            "doc": "This will set the time delay between the page loading and automatically hiding the loading screen. 1000 ms = 1 second.",
+            "editor": "StaticNumber",
+            "name": "auto_close_delay",
+            "rank": 2
+        },
+        "ADB": {
+            "caption": "Text/HTML",
+            "doc": "Text will be displayed below the loading animation. Control the font colors, size, and style using the standard text properties below or add custom html to this field to fully customize the loader.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "text",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "ADC": {
+            "caption": "Text position",
+            "default_val": "0",
+            "doc": "Negative numbers position the text higher on the screen and positive numbers position the text lower on the screen",
+            "editor": "Dropdown",
+            "name": "text_position",
+            "options": "-100,-90,-80,-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100",
+            "rank": 5
+        },
+        "ADD": {
+            "caption": "Lottie code",
+            "default_val": "",
+            "doc": "This field is optional. To use a custom animation, go to lottiefiles.com and paste the code in this input. Note that these changes apply only to the page this element is located on.",
+            "editor": "StaticText",
+            "in_style": true,
+            "long_text": true,
+            "name": "lottie_code",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "ADE": {
+            "caption": "Background color",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "doc": "Set the full screen background color",
+            "editor": "Color",
+            "in_style": true,
+            "name": "background_color",
+            "rank": 6
+        },
+        "AEH": {
+            "caption": "This loading screen can be set to automatically close after page load by checking ‘Auto close’. If checked be sure to add a value to the ‘Close X seconds after page load’ field. While this option works well in most cases, if you have a page that loads a lot of data or elements we recommend using the ‘Hide loading screen’ action to control this functionality directly from your Bubble workflows.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        }
+    },
+    "icon": "ion-load-a",
+    "property_applications": {
+        "Font": true,
+        "MinWidth": true,
+        "resizable": true
+    }
+}

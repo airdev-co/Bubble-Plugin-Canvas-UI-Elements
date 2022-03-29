@@ -1,0 +1,41 @@
+{
+    "category": "plugins",
+    "display": "Show loading screen",
+    "fields": {
+        "ADH": {
+            "caption": "Lottie code",
+            "doc": "This field is optional. To use a custom animation, go to lottiefiles.com and paste the code in this input. Note that these changes apply only to the page this element is located on.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "lottie_code",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "ADI": {
+            "caption": "text",
+            "doc": "Text will be displayed below the loading animation.",
+            "editor": "DynamicValue",
+            "name": "text",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "ADJ": {
+            "caption": "text_position",
+            "default_val": "0",
+            "doc": "Negative numbers position the text higher on the screen and positive numbers position the text lower on the screen",
+            "editor": "Dropdown",
+            "name": "text_position",
+            "options": "-100,-90,-80,-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100",
+            "rank": 3
+        },
+        "ADR": {
+            "caption": "Please note that this action can be triggered from any element (including reusables) as long as the ‘Loading screen’ element is on the main page. You SHOULD NOT add the ‘Loading screen’ element more than once to each page.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        }
+    },
+    "type": "client_side"
+}

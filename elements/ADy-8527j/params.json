@@ -1,0 +1,181 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 40,
+        "width": 250
+    },
+    "display": "Canvas Phone Input",
+    "fields": {
+        "ADf": {
+            "caption": "Color",
+            "default_val": "rgba(231, 233, 235, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "border_color",
+            "rank": 4
+        },
+        "ADg": {
+            "caption": "BORDER SETTINGS ___________________",
+            "editor": "Label",
+            "name": "border_settings",
+            "rank": 1
+        },
+        "ADh": {
+            "caption": "Radius",
+            "default_val": "6px",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "border_radius",
+            "options": "0px,1px,2px,3px,4px,5px,6px,7px,8px,9px,10px",
+            "rank": 2
+        },
+        "ADi": {
+            "caption": "Thickness",
+            "default_val": "1px",
+            "editor": "Dropdown",
+            "in_style": true,
+            "name": "border_thickness",
+            "options": "0px,1px,2px,3px,4px,5px",
+            "rank": 3
+        },
+        "ADj": {
+            "caption": "Color Focused",
+            "default_val": "rgba(2, 132, 254, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "border_color_focused",
+            "rank": 5
+        },
+        "ADk": {
+            "caption": "Color Error",
+            "default_val": "rgba(237, 62, 68, 1)",
+            "editor": "Color",
+            "in_style": true,
+            "name": "border_color_error",
+            "rank": 6
+        },
+        "ADl": {
+            "caption": "COUNTRY SETTINGS ___________________",
+            "editor": "Label",
+            "long_text": false,
+            "name": "country_settings_-----------",
+            "rank": 7
+        },
+        "ADm": {
+            "caption": "Include Countries",
+            "default_val": "US, GB, DE, AU, FR, TH, ID, IN, TW",
+            "doc": "If you would like to only show a few countries it is easiest to define the list of countries to include in the ‘Include Countries’ input. Only the countries defined here will be available as options in the input.",
+            "editor": "StaticText",
+            "long_text": true,
+            "name": "country_list",
+            "optional": true,
+            "rank": 11
+        },
+        "ADn": {
+            "caption": "Preferred Countries",
+            "default_val": "US, GB",
+            "doc": "Countries defined as preferred countries will be shown at the top of the list in alphabetical order.",
+            "editor": "StaticText",
+            "long_text": true,
+            "name": "country_preferred",
+            "optional": true,
+            "rank": 12
+        },
+        "ADo": {
+            "caption": "Exclude Countries",
+            "default_val": "",
+            "doc": "If no countries are defined in the ‘Include Countries’ field, all countries will be shown by default. You can define a list of countries to exclude from that list here.",
+            "editor": "StaticText",
+            "long_text": true,
+            "name": "country_exclude",
+            "optional": true,
+            "rank": 13
+        },
+        "ADp": {
+            "caption": "Enter countries in the inputs below using their two digit code and separated by a comma. For example, to set the United States, Great Britain, and Australia as the preferred countries you would add US,GB,AU to the ‘Preferred Countries’ input.",
+            "editor": "Label",
+            "name": "country_settings_description",
+            "rank": 8
+        },
+        "ADq": {
+            "caption": "Default Value",
+            "editor": "DynamicValue",
+            "name": "default_value",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADr": {
+            "caption": "Limit to this country",
+            "editor": "StaticText",
+            "name": "limit_to_this_country",
+            "optional": true,
+            "rank": 9
+        },
+        "ADs": {
+            "caption": "Initial country",
+            "editor": "DynamicValue",
+            "name": "initial_country",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        },
+        "AFA": {
+            "caption": "Disable input",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "disabled",
+            "rank": 14,
+            "value": "boolean"
+        }
+    },
+    "has_reset_fn": true,
+    "icon": "ion-ios-telephone",
+    "property_applications": {
+        "Font": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "ADt": {
+            "caption": "is valid",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "is_valid",
+            "value": "boolean"
+        },
+        "ADu": {
+            "caption": "international phone number",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "international_phone_number",
+            "value": "text"
+        },
+        "ADv": {
+            "caption": "national phone number",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "national_phone_number",
+            "value": "text"
+        },
+        "ADw": {
+            "caption": "country code",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "country_code",
+            "value": "text"
+        },
+        "ADx": {
+            "caption": "error",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "error",
+            "value": "text"
+        }
+    }
+}
